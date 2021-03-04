@@ -4,8 +4,6 @@ import {useAppContext} from "../../lib/user.js"
 import styles from "./profile.module.css"
 import getAbsoluteURL from '../components/urls.js'
 
-const { VERCEL_URL, HOST } = process.env
-
 const sexData = {
     "": "Sélectionner",
     male: "Male",
