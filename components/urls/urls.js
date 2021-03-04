@@ -1,6 +1,8 @@
+const { VERCEL_URL, HOST } = process.env
+
 function GetAbsoluteURL(path){
-    if (typeof(process.env.VERCEL_URL) !== "undefined") return process.env.VERCEL_URL + path
-    if (typeof(process.env.HOST) !== "undefined") return process.env.HOST + path
+    if (typeof(VERCEL_URL) !== "undefined") return VERCEL_URL + path
+    if (typeof(HOST) !== "undefined") return HOST + path
     return "http://localhost:3000" + path
 
 }
