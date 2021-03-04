@@ -16,11 +16,11 @@ function Icon(){
     )
 }
 
-function navClassName(pos, pathname) {
+function navClassName(pos) {
     if (pos === "top") {
-        return pathname === "/" ? styles.nav_top_home : styles.nav_top_other;
+        return styles.nav_top_home
     } else {
-        return pathname === "/" ? styles.nav_bottom_home : styles.nav_bottom_other;
+        return styles.nav_bottom_home
     }
 }
 
@@ -40,7 +40,7 @@ function CustomNav() {
     }, [])
 
 
-    let nav_classname = styles.nav_custom+" "+ navClassName(pos, pathname);
+    let nav_classname = styles.nav_custom+" "+ navClassName(pos);
 
     const links = [
         {href: "/tic-tac-toe", name: "Tic Tac Toe"}
@@ -104,7 +104,7 @@ function CustomNav() {
                     <></>
                 }
 
-                <NavDropdown title={<Icon/>} id="basic-nav-dropdown">
+                <NavDropdown className={styles.drop_down} title={<Icon/>} id="basic-nav-dropdown">
                     {user?
                         <NavDropdown.Item href="#" onClick={logout}>Logout</NavDropdown.Item>:
                         <NavDropdown.Item href="#" onClick={login}>Login</NavDropdown.Item>
