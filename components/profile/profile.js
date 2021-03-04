@@ -3,6 +3,8 @@ import {Col, Container, Row} from 'react-bootstrap'
 import {useAppContext} from "../../lib/user.js"
 import styles from "./profile.module.css"
 
+const { VERCEL_URL, HOST } = process.env
+
 const sexData = {
     "": "Sélectionner",
     male: "Male",
@@ -49,7 +51,10 @@ function Profile(props) {
     const [currentValue, setCurrentValue] = useState(props.data.value);
 
     function toggleModify() {
-        console.log(process.env.HOST+"/api/users")
+        console.log("HOST")
+        console.log(HOST)
+        console.log("VERCEL_URL")
+        console.log(VERCEL_URL)
         setCurrentValue(inputValue)
         setModify(!modify)
         props.toggle()
