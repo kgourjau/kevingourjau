@@ -1,6 +1,6 @@
 import CustomNavItemList from "../nav/customNavItemList.js";
 import CustomNavLink from "../nav/customNavItem.js"
-import NavDropdown from "react-bootstrap/navDropdown";
+import {NavDropdown} from "react-bootstrap";
 
 import 'bootstrap/dist/css/bootstrap.css'
 import '@fortawesome/fontawesome-free/css/all.css'
