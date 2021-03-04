@@ -24,7 +24,7 @@ function navClassName(pos, pathname) {
     }
 }
 
-function CustomNav({user, loading, pathname}) {
+function CustomNav() {
     const {user,loading,login,count, increment, logout } = useAppContext()
 
     const [pos, setPos] = useState("top")
