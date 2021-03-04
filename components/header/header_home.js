@@ -8,6 +8,7 @@ import {animateScroll as scroll, Link as LinkScroll} from "react-scroll";
 import {Image} from "react-bootstrap";
 import Layout from "../layout_home.js";
 import CustomNavLink from "../nav/customNavItem.js";
+import {useAppContext} from "../../lib/user";
 
 function Icon(){
     return (
@@ -24,6 +25,8 @@ function navClassName(pos, pathname) {
 }
 
 function CustomNav({user, loading, pathname}) {
+    const {user,loading,login,count, increment, logout } = useAppContext()
+
     const [pos, setPos] = useState("top")
     useEffect(() => {
         document.addEventListener("scroll", e => {
