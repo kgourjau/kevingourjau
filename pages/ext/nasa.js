@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import fetch from 'isomorphic-unfetch'
+import Layout from '../../components/layout'
+import FakeData from '../../components/fakeData/fakeData'
 
 export default class extends Component {
     static async getInitialProps() {
@@ -14,14 +16,17 @@ export default class extends Component {
 
     render () {
         return (
-            <div>
+            <Layout>
+                <h1>Nasa Api</h1>
+                <p>A page fetching nasa website api using getInitialProps</p>
                 <div>
                     {this.props.title}
                 </div>
                 <div>
                     <img src={this.props.imageUrl} />
                 </div>
-            </div>
+                <FakeData k={10}/>
+            </Layout>
         )
     }
 }
