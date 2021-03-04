@@ -4,6 +4,7 @@ import {useAppContext} from "../../lib/user.js"
 import styles from "./profile.module.css"
 import getAbsoluteURL from "../urls/urls.js"
 
+
 const sexData = {
     "": "Sélectionner",
     male: "Male",
