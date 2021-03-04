@@ -1,4 +1,4 @@
-import auth0 from '../../lib/auth0'
+import auth0 from '../../lib/auth0.js'
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
