@@ -27,10 +27,10 @@ function MyTable({data}) {
             {
                 data.map((item,key) => {
                     return (
-                        <tr>
+                        <tr key={"tr-"+key}>
                             <td>{key}</td>
                             {Object.entries(item).map(([k,v]) => {
-                                return <td>{v}</td>
+                                return <td key={"td-"+key+"-"+k}>{v}</td>
                             })}
                         </tr>
                     )
