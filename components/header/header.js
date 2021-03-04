@@ -1,12 +1,12 @@
-import CustomNavItemList from "../nav/customNavItemList";
-import CustomNavLink from "../nav/customNavItem"
+import CustomNavItemList from "../nav/customNavItemList.js";
+import CustomNavLink from "../nav/customNavItem.js"
 import NavDropdown from "react-bootstrap/navDropdown";
 
 import 'bootstrap/dist/css/bootstrap.css'
 import '@fortawesome/fontawesome-free/css/all.css'
 import styles from './header.module.css'
 import React, {useEffect, useState} from "react"
-import {useAppContext} from "../../lib/user"
+import {useAppContext} from "../../lib/user.js"
 import ReactDOM from 'react-dom'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'

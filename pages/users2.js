@@ -1,6 +1,6 @@
 import Layout from '../components/layout.js'
 import {Table} from 'react-bootstrap'
-//
+
 function MyTable({data}) {
     console.log(data.map((item) => {
         return Object.entries(item).map(([v, k]) => {
@@ -35,6 +35,12 @@ function MyTable({data}) {
                     )
                 })
             }
+            <tr>
+                <td>1</td>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+            </tr>
             </tbody>
         </Table>
     )
@@ -51,11 +57,11 @@ const Users = ({data}) => (
 )
 
 export async function getServerSideProps({req}) {
-    const url = process.env.HOST + "/api/users"
-    const res = await fetch(url)
-    const data = await res.json()
+    // const url = process.env.HOST + "/api/users"
+    // const res = await fetch(url)
+    // const data = await res.json()
 
-    return {props: {data:data}}
+    return {props: {data:[]}}
 }
 
 export default Users

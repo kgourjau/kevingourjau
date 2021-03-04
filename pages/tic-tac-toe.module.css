@@ -1,8 +1,10 @@
-.Game ol, ul {
+.game ol, .game ul {
     padding-left: 30px;
 }
+.board_row{
 
-.board-row:after {
+}
+.board_row:after {
     clear: both;
     content: "";
     display: table;
@@ -40,6 +42,6 @@
     flex-direction: row;
 }
 
-.game-info {
+.game_info {
     margin-left: 20px;
 }

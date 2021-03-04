@@ -1,5 +1,5 @@
-import Header from './header/header'
-import {useFetchUser} from '../lib/user'
+import Header from './header/header.js'
+import {useFetchUser} from '../lib/user.js'
 import React from 'react';
 import {useRouter} from 'next/router'
 import styles from './layout.module.css'

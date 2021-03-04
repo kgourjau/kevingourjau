@@ -1,11 +1,18 @@
-import Layout from '../components/layout'
-import Profile from '../components/profile/profile'
+import Layout from '../components/layout.js'
+import ProfileData from '../components/profile/profile.js'
+import { useFetchUser } from '../lib/user.js'
+import auth0 from "../lib/auth0";
+const Profile = () => {
 
-const About = () => (
-    <Layout>
-        <h1>About page</h1>
-        <Profile />
-    </Layout>
-)
 
-export default About
+    const {user,loading} = useFetchUser()
+
+    return (
+        <Layout>
+            <h1>Profile</h1>
+            <ProfileData user={user} loading={loading}/>
+        </Layout>
+    )
+}
+
+export default Profile

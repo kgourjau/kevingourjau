@@ -1,5 +1,5 @@
-import Header from './header/header_home'
-import {useFetchUser} from '../lib/user.old'
+import Header from './header/header_home.js'
+import {useFetchUser} from '../lib/user.old.js'
 import React from 'react';
 import {useRouter} from 'next/router'
 import styles from './layout_home.module.css'

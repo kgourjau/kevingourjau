@@ -1,8 +1,10 @@
 import React, {Component} from "react";
+import Layout from "../components/layout.js";
+import styles from "./tic-tac-toe.module.css"
 
 function Square(props) {
     return (
-        <button className="square" onClick={props.onClick}>
+        <button className={styles.square} onClick={props.onClick}>
             {props.value}
         </button>
     );
@@ -21,7 +23,7 @@ class Board extends React.Component {
     render() {
         return (
             <div>
-                <div className="board-row">
+                <div className={styles.board_row}>
                     {this.renderSquare(0)}
                     {this.renderSquare(1)}
                     {this.renderSquare(2)}
@@ -105,14 +107,14 @@ class Game extends React.Component {
         }
 
         return (
-            <div className="game">
-                <div className="game-board">
+            <div className={styles.game}>
+                <div className={styles.gameBoard}>
                     <Board
                         squares={current.squares}
                         onClick={i => this.handleClick(i)}
                     />
                 </div>
-                <div className="game-info">
+                <div className={styles.game_info}>
                     <div>{status}</div>
                     <ol>{moves}</ol>
                 </div>
@@ -147,9 +149,11 @@ function calculateWinner(squares) {
 export default class extends Component {
     render () {
         return (
-            <div>
-                <Game />
-            </div>
+            <Layout>
+                <h1>Tic Tac Toe</h1>
+                <p>The classical tic tac toe example from react tutorials</p>
+                <Game className={styles.game}/>
+            </Layout>
         )
     }
 }

@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {Col, Container, Row} from 'react-bootstrap'
-import {useAppContext} from "../../lib/user"
+import {useAppContext} from "../../lib/user.js"
 import styles from "./profile.module.css"
 
 const sexData = {

@@ -1,4 +1,4 @@
-import CustomNavItemList from "../nav/customNavItemList";
+import CustomNavItemList from "../nav/customNavItemList.js";
 import NavDropdown from "react-bootstrap/navDropdown";
 
 import 'bootstrap/dist/css/bootstrap.css'
@@ -6,8 +6,8 @@ import styles from './header_home.module.css'
 import React, {useEffect, useState} from "react"
 import {animateScroll as scroll, Link as LinkScroll} from "react-scroll";
 import {Image} from "react-bootstrap";
-import Layout from "../layout_home";
-import CustomNavLink from "../nav/customNavItem";
+import Layout from "../layout_home.js";
+import CustomNavLink from "../nav/customNavItem.js";
 
 function navClassName(pos, pathname) {
     if (pos === "top") {

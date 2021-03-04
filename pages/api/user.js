@@ -1,6 +1,6 @@
 import nextConnect from 'next-connect';
 import auth0 from "../../lib/auth0.js";
-import middleware from '../../middleware/mongodb';
+import middleware from '../../middleware/mongodb.js';
 
 const handler = nextConnect();
 

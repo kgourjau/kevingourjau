@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import fetch from 'isomorphic-unfetch'
-import Layout from '../../components/layout'
-import FakeData from '../../components/fakeData/fakeData'
+import Layout from '../../components/layout.js'
+import FakeData from '../../components/fakeData/fakeData.js'
 
 export default class extends Component {
     static async getInitialProps() {
