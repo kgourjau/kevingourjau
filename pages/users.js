@@ -52,6 +52,7 @@ const Users = ({data}) => (
 )
 
 export async function getServerSideProps({req}) {
+    console.log(getAbsoluteURL("/api/users"))
     const url = getAbsoluteURL("/api/users")
     const res = await fetch(url)
     const data = await res.json()
