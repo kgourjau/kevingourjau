@@ -56,11 +56,11 @@ function Profile(props) {
 
     function save() {
         let res = updateUser(props.data.field_name, inputValue, currentValue)
-        console.log(res)
+        // console.log(res)
         res.then(
             function (response) {
-                console.log("v")
-                console.log(response)
+                // console.log("v")
+                // console.log(response)
                 if (response.message === "update successful") {
                     setInputValue(currentValue)
                     toggleModify()

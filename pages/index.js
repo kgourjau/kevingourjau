@@ -95,7 +95,7 @@ function FakeData() {
         )
     }
     const router = useRouter();
-    console.log(router.pathname);
+    // console.log(router.pathname);
     return items;
 }
 

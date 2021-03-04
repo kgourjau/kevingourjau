@@ -9,7 +9,7 @@ handler.use(middleware);
 handler.get(async (req, res) => {
     const session = await auth0.getSession(req)
 
-    console.log(session)
+    // console.log(session)
     if (!session || !session.user) {
         res.json({})
         return

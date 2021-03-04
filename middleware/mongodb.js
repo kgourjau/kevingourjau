@@ -3,7 +3,7 @@ import nextConnect from 'next-connect';
 
 const { MONGODB_URI, MONGODB_DB } = process.env
 
-console.log(MONGODB_URI);
+// console.log(MONGODB_URI);
 
 const client = new MongoClient(MONGODB_URI, {
     useNewUrlParser: true,

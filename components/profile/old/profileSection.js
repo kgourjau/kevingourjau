@@ -35,8 +35,8 @@ const getName = (data,value) => {
 
 const Options = (props) =>
     props.options.map(function (item) {
-        console.log(item.value)
-        console.log(props.selectedOption)
+        // console.log(item.value)
+        // console.log(props.selectedOption)
         return <option selected={item.value === props.selectedOption} value={item.value}>{item.name}</option>
     })
 
@@ -60,7 +60,7 @@ class ProfileSection extends React.Component {
         this.handleChange = this.handleChange.bind(this);
     }
     handleChange(event){
-        console.log("ok")
+        // console.log("ok")
         this.setState({
             inputValue: event.currentTarget.value
         })

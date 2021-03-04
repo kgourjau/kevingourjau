@@ -25,12 +25,12 @@ function logout(){
 function Demo(){
     const {user,loading,login,count, increment } = useAppContext()
 
-    console.log("user")
-    console.log(user)
-    console.log("loading")
-    console.log(loading)
-    console.log("increment")
-    console.log(increment)
+    // console.log("user")
+    // console.log(user)
+    // console.log("loading")
+    // console.log(loading)
+    // console.log("increment")
+    // console.log(increment)
 
     return (
         <Container>

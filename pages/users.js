@@ -3,11 +3,11 @@ import {Table} from 'react-bootstrap'
 import getAbsoluteURL from '../components/urls/urls.js'
 
 function MyTable({data}) {
-    console.log(data.map((item) => {
-        return Object.entries(item).map(([v, k]) => {
-            return <td>{v}</td>
-        })
-    }))
+    // console.log(data.map((item) => {
+    //     return Object.entries(item).map(([v, k]) => {
+    //         return <td>{v}</td>
+    //     })
+    // }))
     return (
         <Table striped bordered hover>
             <thead>
