@@ -1,0 +1,16 @@
+.container {
+    margin-top: 1em;
+    margin-bottom: 3em;
+}
+
+.container > h1 {
+    color: rgb(73, 97, 116);
+    text-align: center;
+}
+
+.content{
+    margin-top: 3em;
+}
+.subtitle{
+    text-align: center;
+}
