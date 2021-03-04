@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {Col, Container, Row} from 'react-bootstrap'
 import {useAppContext} from "../../lib/user.js"
 import styles from "./profile.module.css"
+import getAbsoluteURL from '../components/urls.js'
 
 const { VERCEL_URL, HOST } = process.env
 
@@ -51,10 +52,11 @@ function Profile(props) {
     const [currentValue, setCurrentValue] = useState(props.data.value);
 
     function toggleModify() {
-        console.log("HOST")
-        console.log(HOST)
-        console.log("VERCEL_URL")
-        console.log(VERCEL_URL)
+        // console.log("HOST")
+        // console.log(HOST)
+        // console.log("VERCEL_URL")
+        // console.log(VERCEL_URL)
+        console.log(getAbsoluteURL("/api/user"))
         setCurrentValue(inputValue)
         setModify(!modify)
         props.toggle()
