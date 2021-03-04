@@ -49,7 +49,7 @@ function Profile(props) {
     const [currentValue, setCurrentValue] = useState(props.data.value);
 
     function toggleModify() {
-        console.log(process.env.VERCEL_URL+"/api/users")
+        console.log(process.env.HOST+"/api/users")
         setCurrentValue(inputValue)
         setModify(!modify)
         props.toggle()
