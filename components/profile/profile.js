@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {Col, Container, Row} from 'react-bootstrap'
 import {useAppContext} from "../../lib/user.js"
 import styles from "./profile.module.css"
-
+import getAbsoluteURL from "../urls/urls.js"
 
 const sexData = {
     "": "Sélectionner",
@@ -54,7 +54,7 @@ function Profile(props) {
         // console.log(HOST)
         // console.log("VERCEL_URL")
         // console.log(VERCEL_URL)
-        // console.log(getAbsoluteURL("/api/user"))
+        console.log(getAbsoluteURL("/api/users"))
         setCurrentValue(inputValue)
         setModify(!modify)
         props.toggle()
