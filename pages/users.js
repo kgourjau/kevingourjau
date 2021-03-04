@@ -1,6 +1,7 @@
 import Layout from '../components/layout.js'
 import {Table} from 'react-bootstrap'
-//
+import getAbsoluteURL from '../components/urls/urls.js'
+
 function MyTable({data}) {
     console.log(data.map((item) => {
         return Object.entries(item).map(([v, k]) => {
@@ -51,7 +52,7 @@ const Users = ({data}) => (
 )
 
 export async function getServerSideProps({req}) {
-    const url = process.env.HOST + "/api/users"
+    const url = getAbsoluteURL("/api/users")
     const res = await fetch(url)
     const data = await res.json()
 
