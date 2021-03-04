@@ -89,8 +89,21 @@ function CustomNav({user, loading, pathname}) {
                 </NavDropdown>
             </ul>
             <ul className={"navbar-nav ml-auto"}>
-                {(!loading && user)? <CustomNavLink name={"Logout"} href={"/api/logout"}/>:
-                    <CustomNavLink name={"Login"} href={"/api/login"}/> }
+                <CustomNavLink name={user?user.given_name:""} href={"#"}/>
+
+                {(!loading && user)?
+                    <></>:
+                    <></>
+                }
+
+                <NavDropdown title={<Icon/>} id="basic-nav-dropdown">
+                    {user?
+                        <NavDropdown.Item href="#" onClick={logout}>Logout</NavDropdown.Item>:
+                        <NavDropdown.Item href="#" onClick={login}>Login</NavDropdown.Item>
+                    }
+                    <NavDropdown.Item href="/profile">Profile</NavDropdown.Item>
+
+                </NavDropdown>
             </ul>
         </nav>)
 }
