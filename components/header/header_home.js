@@ -39,7 +39,6 @@ function CustomNav() {
         })
     }, [])
 
-    console.log(pathname);
 
     let nav_classname = styles.nav_custom+" "+ navClassName(pos, pathname);
 
