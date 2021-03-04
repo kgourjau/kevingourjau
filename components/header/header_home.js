@@ -9,6 +9,12 @@ import {Image} from "react-bootstrap";
 import Layout from "../layout_home.js";
 import CustomNavLink from "../nav/customNavItem.js";
 
+function Icon(){
+    return (
+        <i className="fas fa-user"></i>
+    )
+}
+
 function navClassName(pos, pathname) {
     if (pos === "top") {
         return pathname === "/" ? styles.nav_top_home : styles.nav_top_other;
