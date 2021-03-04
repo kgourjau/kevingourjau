@@ -1,0 +1,12 @@
+.card{
+    margin-bottom: 10px;
+    border:0px;
+}
+.icon_wrapper{
+    text-align: center;
+}
+.icon{
+    color:deepskyblue;
+    font-size: 30px;
+    margin-top: 10px;
+}

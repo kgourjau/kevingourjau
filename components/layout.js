@@ -1,34 +1,24 @@
-import Head from 'next/head'
-import Header from './header'
+import Header from './header/header'
+import {useFetchUser} from '../lib/user'
+import React from 'react';
+import {useRouter} from 'next/router'
+import styles from './layout.module.css'
+import {Container} from "react-bootstrap";
 
-function Layout({ user, loading = false, children }) {
+function Layout({children}) {
+    const {user, loading} = useFetchUser()
+
+    const route = useRouter().pathname
+
     return (
         <>
-            <Head>
-                <title>Next.js with Auth0</title>
-            </Head>
+            <Header user={user} loading={loading} pathname={route}/>
 
-            <Header user={user} loading={loading} />
-
-            <main>
-                <div className="container">{children}</div>
+    <Container>
+            <main className={route==='/'?styles.main_home:styles.main}>
+                {children}
             </main>
-
-            <style jsx>{`
-        .container {
-          max-width: 42rem;
-          margin: 1.5rem auto;
-        }
-      `}</style>
-            <style jsx global>{`
-        body {
-          margin: 0;
-          color: #333;
-          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-            Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
-      `}</style>
-        </>
+        </Container></>
     )
 }
 

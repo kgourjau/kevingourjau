@@ -1,0 +1,60 @@
+.nav_custom{
+    transition: all 1s ease-in-out;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    padding-right:3em;
+}
+.nav_top_home{
+    background-color: rgba(86, 96, 138, 0.2);
+}
+.nav_bottom_home{
+    background-color: white;
+}
+.nav_top_other{
+    background-color: rgba(86, 96, 138, 0.2);
+}
+.nav_bottom_other{
+    background-color: white;
+}
+.nav_top_home{
+    color:white;
+}
+.nav_top_other{
+    color: grey;
+}
+.nav_top_home a{
+    color:white;
+}
+.nav_top_other a{
+    color: grey;
+}
+.nav_bottom a{
+    transition: all 1s ease-in-out;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+.nav_bottom_home a{
+    color:grey;
+}
+.nav_bottom_other a{
+    color:grey;
+}
+
+.drop_down div a{
+    color: grey;
+}
+.nav_top_home a:hover{
+    color:white;
+    font-weight: 600;
+}
+.nav_bottom_home a:hover{
+    color:dodgerblue;
+    font-weight: 600;
+}
+.left_item{
+    margin-left:2em;
+}

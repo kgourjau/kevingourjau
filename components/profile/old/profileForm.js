@@ -2,7 +2,7 @@ import React from "react";
 import ProfileSection from "./profileSection";
 import styles from "./profileForm.module.css"
 import {Container} from 'react-bootstrap'
-import SexSelector from './Section'
+import SexSelector from '../profile'
 
 
 class ProfileForm extends React.Component {
