@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {Col, Container, Row} from 'react-bootstrap'
 import {useAppContext} from "../../lib/user.js"
 import styles from "./profile.module.css"
-import getAbsoluteURL from '../components/urls.js'
+import getAbsoluteURL from '../components/urls/urls.js'
 
 const sexData = {
     "": "Sélectionner",
