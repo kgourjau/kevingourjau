@@ -1,5 +1,5 @@
 import CustomNavItemList from "../nav/customNavItemList.js";
-import NavDropdown from "react-bootstrap/navDropdown";
+import {NavDropdown} from "react-bootstrap";
 
 import 'bootstrap/dist/css/bootstrap.css'
 import styles from './header_home.module.css'

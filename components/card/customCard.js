@@ -1,4 +1,4 @@
-import Card from 'react-bootstrap/card'
+import {Card} from 'react-bootstrap'
 import styles from './customCard.module.css'
 
 const CustomCard = ({settings}) => {

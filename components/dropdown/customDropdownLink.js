@@ -1,5 +1,5 @@
 import React from 'react'
-import Dropdown from 'react-bootstrap/Dropdown'
+import {Dropdown} from 'react-bootstrap'
 
 // The forwardRef is important!!
 // Dropdown needs access to the DOM node in order to position the Menu

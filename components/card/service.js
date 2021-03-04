@@ -1,4 +1,4 @@
-import Card from 'react-bootstrap/card'
+import {Card} from 'react-bootstrap'
 import styles from './service.module.css'
 import {Col, Container, Row} from 'react-bootstrap'
 import React from "react";
